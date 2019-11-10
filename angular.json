@@ -7,24 +7,24 @@
       "projectType": "application",
       "schematics": {},
       "root": "",
-      "sourceRoot": "src",
+      "sourceRoot": "src/main/webapp/src/",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/handmade-land",
-            "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
+            "index": "src/main/webapp/src/index.html",
+            "main": "src/main/webapp/src/main.ts",
+            "polyfills": "src/main/webapp/src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": false,
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "src/main/webapp/src/favicon.ico",
+              "src/main/webapp/src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/main/webapp/src/styles.css"
             ],
             "scripts": []
           },
@@ -32,8 +32,8 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
+                  "replace": "src/main/webapp/src/environments/environment.ts",
+                  "with": "src/main/webapp/src/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -80,16 +80,16 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "src/test.ts",
-            "polyfills": "src/polyfills.ts",
+            "main": "src/main/webapp/src/test.ts",
+            "polyfills": "src/main/webapp/src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "src/main/webapp/src/favicon.ico",
+              "src/main/webapp/src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/main/webapp/src/styles.css"
             ],
             "scripts": []
           }
