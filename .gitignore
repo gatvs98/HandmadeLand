@@ -231,6 +231,9 @@ public/
 
 ### VisualStudioCode ###
 .vscode/*
+/.vscode
+/.classpath
+/.setting
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json

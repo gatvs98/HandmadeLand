@@ -4,8 +4,8 @@ import com.guilherme.silva.projects.handmadeland.interfaces.IUserService;
 import com.guilherme.silva.projects.handmadeland.model.User;
 import com.guilherme.silva.projects.handmadeland.repository.UserRepository;
 import com.guilherme.silva.projects.handmadeland.util.JwtTokenUtil;
-import com.sun.org.slf4j.internal.Logger;
-import com.sun.org.slf4j.internal.LoggerFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -16,7 +16,6 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
-import java.util.Set;
 
 @Service(value = "userService")
 public class UserService implements UserDetailsService, IUserService {

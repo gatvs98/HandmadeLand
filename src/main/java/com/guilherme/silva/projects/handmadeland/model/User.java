@@ -1,6 +1,7 @@
 package com.guilherme.silva.projects.handmadeland.model;
 
 import javax.persistence.*;
+import com.guilherme.silva.projects.handmadeland.model.Role;
 
 @Entity
 public class User {
@@ -18,6 +19,12 @@ public class User {
   private String firstName;
 
   private String lastName;
+
+  @Transient
+  private Role role;
+
+  @Column(name = "role_id")
+  private long roleId;
 
   public Long getId() {
     return id;
@@ -66,4 +73,22 @@ public class User {
   public void setLastName(String lastName) {
     this.lastName = lastName;
   }
+
+  public Role getRole() {
+    return role;
+  }
+
+  public void setRole(Role role) {
+    this.role = role;
+  }
+
+  public long getRoleId() {
+    return roleId;
+  }
+
+  public void setRoleId(long roleId) {
+    this.roleId = roleId;
+  }
+
+  
 }
